@@ -1,0 +1,23 @@
+{
+  "name": "omp-codex-transfer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Transfer the active Oh My Pi branch into an independent Codex session",
+  "omp": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "check": "tsc --noEmit && prettier --check .",
+    "format": "prettier --write .",
+    "test": "node --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "@oh-my-pi/pi-coding-agent": "18.2.1",
+    "@types/node": "^24.0.0",
+    "prettier": "3.9.6",
+    "typescript": "^5.9.3"
+  }
+}
